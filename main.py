@@ -13,6 +13,8 @@ def main():
         print("\nFound")
     else:
         print("\nNot Found")
+    
+    print(B.sum_values(B.root))
 
 
 if __name__ == '__main__':

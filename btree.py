@@ -88,3 +88,14 @@ class BTree:
         
         else:
             return self.search_key(key, self.root)
+    
+    def sum_values(self, node):
+        s = 0
+        for i in node.keys:
+            s += i[1]
+        
+        if len(node.child) > 0:
+            for i in node.child:
+                s += self.sum_values(i)
+        
+        return s
