@@ -30,19 +30,29 @@ def main():
         print('2- Mostrar árbol b-tree')
         print('3- Calcular suma de los elementos')
         print('4- Salir')
+        print("---------------")
+        print()
         try:
             options = int(input("Selecciones una opción: "))
         except Exception:
             print('Pruebe de nuevo')
             options = int(input("Selecciones una opción: "))
-
         match options:
             case 1:
+                print("---------------")
                 search(b_tree)
+                print("---------------")
+                print()
             case 2:
+                print("---------------")
                 show(b_tree)
+                print("---------------")
+                print()
             case 3:
+                print("---------------")
                 sum_data(b_tree)
+                print("---------------")
+                print()
             case _:
                 exit()
 
